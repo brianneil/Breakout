@@ -3,13 +3,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Breakout View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BreakoutViewController" customModule="Breakout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Breakout" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,54 +16,11 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9CE-AZ-8h8">
-                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="HcA-Mv-Ade" appends="YES" id="lZz-BQ-0eF"/>
-                                </connections>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="9CE-AZ-8h8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8sh-fa-MZt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9CE-AZ-8h8" secondAttribute="trailing" id="9wg-eq-yv2"/>
-                            <constraint firstAttribute="trailing" secondItem="9CE-AZ-8h8" secondAttribute="trailing" id="EzC-BQ-SXl"/>
-                            <constraint firstItem="9CE-AZ-8h8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="NgS-X9-XPx"/>
-                            <constraint firstAttribute="trailing" secondItem="9CE-AZ-8h8" secondAttribute="trailing" id="UoS-cI-Yf6"/>
-                            <constraint firstItem="9CE-AZ-8h8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="WpI-ht-iUU"/>
-                            <constraint firstItem="9CE-AZ-8h8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="c3o-Rl-Xkt"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9CE-AZ-8h8" secondAttribute="bottom" id="lXK-zR-LYs"/>
-                            <constraint firstItem="9CE-AZ-8h8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qyH-ct-vLb"/>
-                            <constraint firstItem="9CE-AZ-8h8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ruo-El-bTW"/>
-                            <constraint firstItem="9CE-AZ-8h8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="t5h-O9-dIU"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="8sh-fa-MZt"/>
-                                <exclude reference="9wg-eq-yv2"/>
-                                <exclude reference="UoS-cI-Yf6"/>
-                                <exclude reference="WpI-ht-iUU"/>
-                                <exclude reference="c3o-Rl-Xkt"/>
-                                <exclude reference="qyH-ct-vLb"/>
-                                <exclude reference="lXK-zR-LYs"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <connections>
-                        <outlet property="gameView" destination="9CE-AZ-8h8" id="BDk-CX-pcB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="HcA-Mv-Ade">
-                    <connections>
-                        <action selector="slidePaddle:" destination="BYZ-38-t0r" id="6Jg-Z2-9BY"/>
-                    </connections>
-                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="304" y="477"/>
         </scene>
     </scenes>
 </document>
