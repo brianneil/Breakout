@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D36004FC1C6D320000573B62 /* BreakoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36004FB1C6D320000573B62 /* BreakoutViewController.swift */; };
+		D36005001C6D599200573B62 /* BrickOutBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36004FF1C6D599200573B62 /* BrickOutBehavior.swift */; };
 		D3830AD21C6D061200F4E853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3830AD11C6D061200F4E853 /* AppDelegate.swift */; };
 		D3830AD41C6D061200F4E853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3830AD31C6D061200F4E853 /* ViewController.swift */; };
 		D3830AD71C6D061200F4E853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3830AD51C6D061200F4E853 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D36004FB1C6D320000573B62 /* BreakoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakoutViewController.swift; sourceTree = "<group>"; };
+		D36004FF1C6D599200573B62 /* BrickOutBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickOutBehavior.swift; sourceTree = "<group>"; };
 		D3830ACE1C6D061200F4E853 /* Breakout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3830AD11C6D061200F4E853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3830AD31C6D061200F4E853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			children = (
 				D3830AD31C6D061200F4E853 /* ViewController.swift */,
 				D3830AD51C6D061200F4E853 /* Main.storyboard */,
+				D36004FB1C6D320000573B62 /* BreakoutViewController.swift */,
+				D36004FF1C6D599200573B62 /* BrickOutBehavior.swift */,
 				D3830AD81C6D061200F4E853 /* Assets.xcassets */,
 				D3830ADA1C6D061200F4E853 /* LaunchScreen.storyboard */,
 				D3830ADD1C6D061200F4E853 /* Info.plist */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36004FC1C6D320000573B62 /* BreakoutViewController.swift in Sources */,
 				D3830AD41C6D061200F4E853 /* ViewController.swift in Sources */,
+				D36005001C6D599200573B62 /* BrickOutBehavior.swift in Sources */,
 				D3830AD21C6D061200F4E853 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ApolloHearing.BrianNeil.Breakout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -417,6 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ApolloHearing.BrianNeil.Breakout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -487,6 +497,7 @@
 				D3830AF81C6D061200F4E853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3830AF91C6D061200F4E853 /* Build configuration list for PBXNativeTarget "BreakoutTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +506,7 @@
 				D3830AFB1C6D061200F4E853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3830AFC1C6D061200F4E853 /* Build configuration list for PBXNativeTarget "BreakoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +515,7 @@
 				D3830AFE1C6D061200F4E853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
